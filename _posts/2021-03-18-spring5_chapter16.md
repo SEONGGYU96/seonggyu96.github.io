@@ -14,7 +14,8 @@ tags:
   - ResponseEntity
 ---
 
-웹 페이지에서 Ajax를 이용해서 서버 API를 호출하는 사이트가 많다. 이들 API는 HTML 대신 JSON이나 XML을 응답으로 사용한다. 이때 GET, POST 뿐만 아니라 PUT, DELETE와 같은 다른 방식도 함께 사용한다. 스프링 MVC를 사용하면 이를 위한 웹 컨트롤러를 쉽게 만들 수 있다.  
+웹 페이지에서 Ajax를 이용해서 서버 API를 호출하는 사이트가 많다. 이들 API는 HTML 대신 JSON이나 XML을 응답으로 사용한다. 이때 GET, POST 뿐만 아니라 ~~PUT, DELETE와 같은 다른 방식도 함께 사용한다.~~ (PUT, DELETE 메서드는 보안에 취약하여 현업에서는 사용하지 않는다고 한다) 스프링 MVC를 사용하면 이를 위한 웹 컨트롤러를 쉽게 만들 수 있다.  
+
 
 ## JSON  
 

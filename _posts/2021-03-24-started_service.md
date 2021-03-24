@@ -124,7 +124,7 @@ public class LoadSchedulesService extends Service {
 
 `Context`에는 서비스를 시작하는 방법으로 `startService()`와 `bindService()` 메서드가 있다. (안드로이드 버전 26이상 부터는 `startForegroundService()` 메서드도 제공한다.)  
 
-<img src="https://developer.android.com/images/service_lifecycle.png."/>  
+<img src="https://developer.android.com/images/service_lifecycle.png"/>  
 
 서비스는 보통 스타티드 서비스(Unbounded Service)와 바운드 서비스(Bound Service)로 존재하는데, 스타티드이면서 바운드일 수 있다. 스타티드이면서 바운드인 서비스는 코드도 복잡하고 고려할 것이 많기 대문에 피하는 게 좋지만 어쩔 수 없이 사용해야하는 경우도 있다. 예를 들어 음악 재생 화면이 있을 때 화면을 종료해도 음악을 들을 수 있으려면 스타티드 서비스를 이용해야한다. 그런데 다시 화면에 진입할 때 재생 중인 음악 정보를 화면에 보여줘야 한다면 바운드 서비스이기도 해야 한다.  
 

@@ -234,7 +234,7 @@ public int onStartCommand(Intent intent, int flags, int startId) {
 
 [공식문서](https://developer.android.com/about/versions/oreo/android-8.0-changes.html#back-all)에 따르면, Android 8.0 이상 부터는 캐시된 프로세스 상태이고 포그라운드 컴포넌트가 없다면 백그라운드 서비스를 실행하는데 여러가지 제약이 따른다. 시스템에 의해 `START_STICKY`, `START_REDELIVER_INTENT`를 리턴한 백그라운드 서비스가 종료되면 곧이어 서비스를 재시작하려고 시도한다. 그러나 서비스를 재시작하기 위해 실행한 프로세스는 액티비티도 함께 재시작하지는 않기 때문에 캐시된 프로세스 상태이고, 포그라운드 컴포넌트가 없는 상태이다. 따라서 백그라운드 서비스를 실행할 때 `IllegalStateException` 이 발생한다.  
 
-> java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.gugyu.servicetest/.SleepService }: app is in background uid UidRecord{3a1d18a u0a84 SVC  idle change:idle|uncached procs:1 proclist:29836, seq(0,0,0)}
+> java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.gugyu.servicetest/.SleepService }: app is in background uid UidRecord{3a1d18a u0a84 SVC  idle change:idle`|`uncached procs:1 proclist:29836, seq(0,0,0)}
 
 따라서 Android 8.0 이상을 대상으로 하는 앱이라면, `JobScheduler`나 `DownloadManager`, 혹은 `ForegroundService`를 고려해보자.  
 

@@ -116,7 +116,7 @@ private void setLocaleDateType() {
 ---
 그 외에도 다이얼로그의 날짜 어순, `day | days` 문제 등 다양한 수정이 필요한데, 모두 위 분기문으로 처리하면 된다.  
 나는 이를 커스텀뷰로 해결하였는데 이는 다음 링크에서 볼 수 있다.  
-[안드로이드 현지화를 위한 커스텀 텍스트뷰 만들기](https://seonggyu96.github.io/2020/12/06/WASK_custom_view/")
+[안드로이드 현지화를 위한 커스텀 텍스트뷰 만들기](https://seonggyu96.github.io/2020/12/06/WASK_custom_view/)
 <br>
 
 끝
